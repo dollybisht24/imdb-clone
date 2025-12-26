@@ -1,24 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
-
+import StudentCard from './Components/StudentCard.jsx'
 function App() {
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <>
+    <h1>🎓 Student Dashboard</h1>
+
+    <div className="student-cards-container">
+        <StudentCard 
+        name="Julian Vance"
+        course="Computer Science"
+        marks={92}
+        />
+
+         <StudentCard
+        name="Amara Okafor"
+        course="Machine Learning"
+        marks={92}
+        />
+
+         <StudentCard
+        name="Oliver Quinn"
+        course="Computer Graphics Design"
+        marks={92}
+        />
+
+      
+
     </div>
+    
+    
+    </>
   );
 }
 
