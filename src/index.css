@@ -1,55 +1,55 @@
-body {
-  background-color: whitesmoke;
-}
 
-h1{
+h1 {
   text-align: center;
-  font-size: 50px;
-  padding:100px;
-}
-.student-cards-container {
-  display: flex;          /* Flex layout */
-  flex-wrap: wrap;        /* Wrap cards if needed */
-  gap: 20px;              /* Space between cards */
-  justify-content: center; /* Center horizontally */
-  align-items: flex-start; /* Align cards to top */
-}
-.student-cards-container button{
-  margin-right: 200px;
-  border:2px solid white;
-  height: 30px;
-  width: 100px;
-  border-radius: 5px;
-  background-color: #1086f5;
-  color: white;
+  margin: 40px 0;
+  font-size: 20px;
 }
 
-/* Individual Student Card */
-.StudentCard {
-  background-color: white;
-  border-radius: 20px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+
+.card {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+.MovieCard {
+  text-align: center;
+  height: 420px;
+  width: 300px;
   padding: 20px;
-  height: 250px;
-  width: 200px;
-  text-align: center;
-  transition: transform 0.2s, box-shadow 0.2s;
+  border: 1px solid rgba(46, 44, 44, 0.1);
+  border-radius: 10px;
+  background-color: rgba(240, 255, 255, 0.2);
 }
-.StudentCard h3{
-   font-size: 15px;
-   margin-right: 200px;
-   width: 200px;
-   height:20px;
-   border: 1px solid white;
-   background-color: rgba(191, 215, 236, 0.301);
-   border-radius: 5px;
+
+
+.Movie-Card {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 8px;
 }
-.StudentCard h4{
+
+.MovieCard button {
+  margin-top: 15px;
+  border: none;
+  border-radius: 7px;
+  background-color: hsla(212, 81%, 54%, 0.9);
+  width: 100%;
+  color: white;
+  height: 35px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.MovieCard button:hover {
+  background-color: hsla(212, 81%, 45%, 1);
+}
+
+
+.MovieCard h2 {
+  margin-top: 15px;
   font-size: 15px;
-   margin-right: 100px;
-   width: 200px;
-   height:20px;
-   border: 1px solid white;
-   background-color: rgba(191, 215, 236, 0.301);
-   border-radius: 5px;
 }

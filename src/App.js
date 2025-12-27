@@ -1,36 +1,34 @@
-import StudentCard from './Components/StudentCard.jsx'
-function App() {
-  
-  return (
+import MovieCard from "./Components/MovieCard";
+
+function App(){
+  return(
     <>
-    <h1>🎓 Student Dashboard</h1>
+    <h1> 🎬 My Movie Collection</h1>
+    <div className="card">
 
-    <div className="student-cards-container">
-        <StudentCard 
-        name="Julian Vance"
-        course="Computer Science"
-        marks={92}
-        />
+    < MovieCard
+    name="Inception"
+    image="https://i.ebayimg.com/images/g/LlUAAOSwm8VUwoRL/s-l1200.jpg"
+    
+    />
 
-         <StudentCard
-        name="Amara Okafor"
-        course="Machine Learning"
-        marks={92}
-        />
+     < MovieCard
+    name="The Dark Knight"
+    image="https://m.media-amazon.com/images/I/61vhZu53gSL._AC_UF894,1000_QL80_.jpg"
+    />
 
-         <StudentCard
-        name="Oliver Quinn"
-        course="Computer Graphics Design"
-        marks={92}
-        />
-
-      
+     < MovieCard
+    name="Pulp Fiction"
+    image="https://cdn.displate.com/artwork/270x380/2024-09-13/4f7969bf-f53d-4300-b093-153a1a9d85cd.jpg"
+    />
 
     </div>
+
+  
     
-    
+
     </>
+
   );
 }
-
 export default App;
